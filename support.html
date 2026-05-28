@@ -3,21 +3,23 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thank You | TruckBites</title>
-  <meta name="description" content="Thank you for contacting TruckBites." />
+
+  <title>Technical Support | TruckBites</title>
+  <meta name="description" content="Report a TruckBites technical issue or bug." />
+
   <link rel="stylesheet" href="styles.css?v=10" />
 </head>
 
 <body>
   <header class="site-header">
     <a href="index.html" class="brand" aria-label="TruckBites home">
-      <img src="images/truckbites-logo.png" alt="TruckBites logo" class="brand-logo" />
+      <img src="images/truckbiteslogofinal.png" alt="TruckBites logo" class="brand-logo" />
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
       <a href="index.html">Home</a>
       <a href="vendor-signup.html">Vendors</a>
-      <a href="support.html">Support</a>
+      <a href="contact.html">Contact</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
     </nav>
@@ -26,25 +28,69 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <span class="badge">Message Received</span>
-        <h1>Thanks for reaching out!</h1>
-        <p>We received your submission and will follow up soon.</p>
+        <span class="badge">Technical Support</span>
+        <h1>Report an issue.</h1>
+        <p>
+          Use this page for bugs, broken links, form issues, app problems, or technical problems.
+        </p>
 
         <div class="hero-buttons">
-          <a href="index.html" class="btn-primary">Return Home</a>
-          <a href="vendor-signup.html" class="btn-secondary">Vendor Signup</a>
+          <a href="contact.html" class="btn-secondary">Back to Contact</a>
         </div>
       </div>
+
+      <div class="hero-image">
+        <img src="images/loaded-fries.jpg" alt="Loaded fries" class="hero-food-image" />
+      </div>
+    </section>
+
+    <section class="forms-grid">
+      <form class="form-card" action="https://formspree.io/f/xjgzlreg" method="POST">
+        <input type="hidden" name="_subject" value="New TruckBites Bug Report" />
+        <input type="hidden" name="form_type" value="Bug Report" />
+        <input type="hidden" name="_next" value="https://gettruckbites.com/success.html" />
+
+        <h2>Bug Report</h2>
+
+        <label>Name
+          <input type="text" name="name" />
+        </label>
+
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>Device
+          <select name="device_type" required>
+            <option value="">Select one</option>
+            <option value="iPhone">iPhone</option>
+            <option value="Android">Android</option>
+            <option value="Web">Web</option>
+            <option value="Other">Other</option>
+          </select>
+        </label>
+
+        <label>Where did it happen?
+          <input type="text" name="location_in_app" placeholder="Example: Contact page, Vendor page, form, map, profile" />
+        </label>
+
+        <label>What happened?
+          <textarea name="message" rows="6" required></textarea>
+        </label>
+
+        <button type="submit">Report Bug</button>
+      </form>
     </section>
   </main>
 
   <footer>
     <div class="footer-links">
       <a href="vendor-signup.html">Vendor Signup</a>
-      <a href="support.html">Support</a>
+      <a href="contact.html">Contact</a>
       <a href="privacy.html">Privacy</a>
       <a href="terms.html">Terms</a>
     </div>
+
     <p class="copyright">&copy; 2026 TruckBites. Find Local Flavor.</p>
   </footer>
 </body>
