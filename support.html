@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Support | TruckBites</title>
-  <meta name="description" content="Contact TruckBites support, report a bug, or ask a question." />
+  <title>Thank You | TruckBites</title>
+  <meta name="description" content="Thank you for contacting TruckBites." />
   <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
     <a href="index.html" class="brand" aria-label="TruckBites home">
-      <img src="/images/truckbites-logo.png" alt="TruckBites logo" class="brand-logo" />
+      <img src="images/truckbites-logo.png" alt="TruckBites logo" class="brand-logo" />
     </a>
 
     <nav class="site-nav" aria-label="Main navigation">
@@ -26,74 +26,15 @@
   <main>
     <section class="hero">
       <div class="hero-content">
-        <span class="badge">Support</span>
-        <h1>How can we help?</h1>
-        <p>Contact TruckBites, ask a question, report a bug, or let us know if something is not working correctly.</p>
+        <span class="badge">Message Received</span>
+        <h1>Thanks for reaching out!</h1>
+        <p>We received your submission and will follow up soon.</p>
+
+        <div class="hero-buttons">
+          <a href="index.html" class="btn-primary">Return Home</a>
+          <a href="vendor-signup.html" class="btn-secondary">Vendor Signup</a>
+        </div>
       </div>
-    </section>
-
-    <section class="forms-grid">
-      <form class="form-card" action="https://formspree.io/f/xjgzlreg" method="POST">
-        <input type="hidden" name="_subject" value="New TruckBites Support Request" />
-        <input type="hidden" name="form_type" value="Support Request" />
-
-        <h2>Contact Support</h2>
-
-        <label>Name
-          <input type="text" name="name" />
-        </label>
-
-        <label>Email
-          <input type="email" name="email" required />
-        </label>
-
-        <label>Reason
-          <select name="request_type" required>
-            <option value="">Select one</option>
-            <option value="Vendor Help">Vendor Help</option>
-            <option value="App Issue">App Issue</option>
-            <option value="Partnership">Partnership</option>
-            <option value="General Question">General Question</option>
-          </select>
-        </label>
-
-        <label>Message
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-
-        <button type="submit">Send Message</button>
-      </form>
-
-      <form class="form-card" action="https://formspree.io/f/xjgzlreg" method="POST">
-        <input type="hidden" name="_subject" value="New TruckBites Bug Report" />
-        <input type="hidden" name="form_type" value="Bug Report" />
-
-        <h2>Report a Bug</h2>
-
-        <label>Email
-          <input type="email" name="email" required />
-        </label>
-
-        <label>Device
-          <select name="device_type" required>
-            <option value="">Select one</option>
-            <option value="iPhone">iPhone</option>
-            <option value="Android">Android</option>
-            <option value="Web">Web</option>
-            <option value="Other">Other</option>
-          </select>
-        </label>
-
-        <label>Where did it happen?
-          <input type="text" name="location_in_app" placeholder="Example: Vendor signup, map, menu, profile page" />
-        </label>
-
-        <label>What happened?
-          <textarea name="message" rows="5" required></textarea>
-        </label>
-
-        <button type="submit">Report Bug</button>
-      </form>
     </section>
   </main>
 
