@@ -1,101 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<section class="forms-grid">
+  <form class="form-card" action="https://formspree.io/f/xjgzlreg" method="POST">
+    <input type="hidden" name="_subject" value="New TruckBites Contact Form Submission" />
+    <input type="hidden" name="form_type" value="Contact Form" />
+    <input type="hidden" name="_next" value="https://gettruckbites.com/success.html" />
 
-  <title>Contact | TruckBites</title>
-  <meta name="description" content="Contact TruckBites for general questions, vendor questions, partnerships, and launch information." />
+    <h2>Contact Us</h2>
 
-  <link rel="stylesheet" href="styles.css?v=10" />
-</head>
+    <label>Name
+      <input type="text" name="name" required />
+    </label>
 
-<body>
-  <header class="site-header">
-    <a href="index.html" class="brand" aria-label="TruckBites home">
-      <img src="images/truckbiteslogofinal.png" alt="TruckBites logo" class="brand-logo" />
-    </a>
+    <label>Email
+      <input type="email" name="email" required />
+    </label>
 
-    <nav class="site-nav" aria-label="Main navigation">
-      <a href="index.html">Home</a>
-      <a href="vendor-signup.html">Vendors</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </nav>
-  </header>
+    <label>Reason
+      <select name="reason" required>
+        <option value="">Select one</option>
+        <option value="General Question">General Question</option>
+        <option value="Vendor Question">Vendor Question</option>
+        <option value="Partnership">Partnership</option>
+        <option value="Media Request">Media Request</option>
+        <option value="Launch Information">Launch Information</option>
+      </select>
+    </label>
 
-  <main>
-    <section class="hero">
-      <div class="hero-content">
-        <span class="badge">Contact TruckBites</span>
-        <h1>Questions, partnerships, or launch info?</h1>
-        <p>
-          Use this form for general questions, vendor questions, media requests,
-          partnerships, and launch updates.
-        </p>
-      </div>
+    <label>Message
+      <textarea name="message" rows="6" required></textarea>
+    </label>
 
-      <div class="hero-image">
-        <img src="images/Club-sandwich.jpg" alt="Club sandwich" class="hero-food-image" />
-      </div>
-    </section>
+    <button type="submit">Send Message</button>
+  </form>
 
-    <section class="forms-grid">
-      <form class="form-card" action="https://formspree.io/f/xjgzlreg" method="POST">
-        <input type="hidden" name="_subject" value="New TruckBites Contact Form Submission" />
-        <input type="hidden" name="form_type" value="Contact Form" />
-        <input type="hidden" name="_next" value="https://gettruckbites.com/success.html" />
+  <div class="form-card">
+    <h2>Need technical help?</h2>
+    <p>
+      If something on the website or app is not working, use the support page
+      to report the issue.
+    </p>
 
-        <h2>Contact Us</h2>
-
-        <label>Name
-          <input type="text" name="name" required />
-        </label>
-
-        <label>Email
-          <input type="email" name="email" required />
-        </label>
-
-        <label>Reason
-          <select name="reason" required>
-            <option value="">Select one</option>
-            <option value="General Question">General Question</option>
-            <option value="Vendor Question">Vendor Question</option>
-            <option value="Partnership">Partnership</option>
-            <option value="Media Request">Media Request</option>
-            <option value="Launch Information">Launch Information</option>
-          </select>
-        </label>
-
-        <label>Message
-          <textarea name="message" rows="6" required></textarea>
-        </label>
-
-        <button type="submit">Send Message</button>
-      </form>
-
-      <div class="form-card">
-        <h2>Need technical help?</h2>
-        <p>
-          If something on the website or app is not working, use the support page
-          to report the issue after contacting us.
-        </p>
-
-        <a href="support.html" class="btn-secondary">Go to Technical Support</a>
-      </div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="footer-links">
-      <a href="vendor-signup.html">Vendor Signup</a>
-      <a href="contact.html">Contact</a>
-      <a href="privacy.html">Privacy</a>
-      <a href="terms.html">Terms</a>
-    </div>
-
-    <p class="copyright">&copy; 2026 TruckBites. Find Local Flavor.</p>
-  </footer>
-</body>
-</html>
+    <a href="support.html" class="btn-secondary">Go to Technical Support</a>
+  </div>
+</section>
