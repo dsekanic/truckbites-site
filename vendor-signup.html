@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vendor Signup | TruckBites</title>
+  <meta name="description" content="Join the TruckBites vendor launch list for Louisville and Southern Indiana food trucks." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand" aria-label="TruckBites home">
+      <img src="assets/images/truckbites-logo.png" alt="TruckBites logo" class="brand-logo" />
+    </a>
+
+    <nav class="site-nav" aria-label="Main navigation">
+      <a href="index.html">Home</a>
+      <a href="vendor-signup.html">Vendors</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-content">
+        <span class="badge">Vendor Launch List</span>
+        <h1>Bring Your Food Truck to TruckBites.</h1>
+        <p>Get discovered by local customers, share your location, promote specials, and join our Louisville and Southern Indiana launch group.</p>
+      </div>
+    </section>
+
+    <section class="forms-grid">
+      <form class="form-card" action="https://formspree.io/f/xjgzlreg" method="POST">
+        <input type="hidden" name="_subject" value="New TruckBites Vendor Interest Form Submission" />
+        <input type="hidden" name="form_type" value="Vendor Interest" />
+
+        <h2>Vendor Interest Form</h2>
+
+        <label>Food Truck / Business Name
+          <input type="text" name="business_name" required />
+        </label>
+
+        <label>Contact Name
+          <input type="text" name="contact_name" required />
+        </label>
+
+        <label>Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>Phone
+          <input type="tel" name="phone" />
+        </label>
+
+        <label>City
+          <input type="text" name="city" />
+        </label>
+
+        <label>State
+          <input type="text" name="state" />
+        </label>
+
+        <label>Type of Food / Cuisine
+          <input type="text" name="cuisine" required />
+        </label>
+
+        <label>Social Media or Website Link
+          <input type="url" name="social_link" />
+        </label>
+
+        <label class="checkbox-label">
+          <input type="checkbox" name="photo_permission" value="Yes" />
+          I give TruckBites permission to use public photos or submitted photos for proof-of-concept mockups and launch previews.
+        </label>
+
+        <label>Notes
+          <textarea name="notes" rows="5"></textarea>
+        </label>
+
+        <button type="submit">Join the Vendor Launch List</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-links">
+      <a href="vendor-signup.html">Vendor Signup</a>
+      <a href="support.html">Support</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="terms.html">Terms</a>
+    </div>
+    <p class="copyright">&copy; 2026 TruckBites. Find Local Flavor.</p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<form class="form-card" action="https://formspree.io/f/xjgzlreg" method="POST">
+  <input type="hidden" name="_subject" value="New TruckBites Bug Report">
+  <input type="hidden" name="form_type" value="Bug Report">
+
+  <h2>Report a Bug</h2>
+
+  <label>Email
+    <input type="email" name="email" required>
+  </label>
+
+  <label>Device
+    <select name="device_type" required>
+      <option value="">Select one</option>
+      <option value="iPhone">iPhone</option>
+      <option value="Android">Android</option>
+      <option value="Web">Web</option>
+      <option value="Other">Other</option>
+    </select>
+  </label>
+
+  <label>Where did it happen?
+    <input type="text" name="location_in_app">
+  </label>
+
+  <label>What happened?
+    <textarea name="message" rows="5" required></textarea>
+  </label>
+
+  <button type="submit">Report Bug</button>
+</form>
