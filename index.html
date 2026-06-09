@@ -8,18 +8,21 @@
 
   <meta
     name="description"
-    content="TruckBites helps food truck owners get found and helps customers discover local food trucks, menus, specials, and events across Louisville and Southern Indiana."
+    content="TruckBites helps Louisville and Southern Indiana food truck owners get found while helping customers discover real local food, menus, specials, events, and truck locations."
   />
 
-  <link rel="stylesheet" href="styles.css?v=7" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 
 <body>
   <header class="site-header">
     <div class="container header-inner">
       <a href="index.html" class="brand" aria-label="TruckBites home">
-        <span class="brand-mark">TB</span>
-        <span class="brand-text">TruckBites</span>
+        <img
+          src="images/truckbiteslogofinal.png"
+          alt="TruckBites logo"
+          class="brand-logo"
+        />
       </a>
 
       <nav class="main-nav" aria-label="Main navigation">
@@ -44,7 +47,7 @@
 
           <p class="hero-subtitle">
             TruckBites is a local food truck discovery platform built to help vendors share their
-            location, menu, specials, and events while helping customers find local flavor faster.
+            location, menu, specials, and events while helping customers find real local flavor faster.
           </p>
 
           <div class="hero-actions">
@@ -59,25 +62,15 @@
           </div>
         </div>
 
-        <div class="hero-card" aria-label="TruckBites launch preview">
-          <div class="app-preview">
-            <div class="preview-top">
-              <span class="dot"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
-            </div>
-
-            <div class="preview-map">
-              <div class="map-pin pin-one">🍔</div>
-              <div class="map-pin pin-two">🌮</div>
-              <div class="map-pin pin-three">☕</div>
-            </div>
-
-            <div class="preview-panel">
-              <p class="preview-label">Nearby now</p>
-              <h3>Local trucks, menus, and specials in one place.</h3>
-              <p>Real-time visibility for vendors. Easier discovery for customers.</p>
-            </div>
+        <div class="hero-photo-card">
+          <img
+            src="images/Burger-and-fries.jpg"
+            alt="Burger and fries from a Louisville-area food truck"
+            class="hero-photo"
+          />
+          <div class="photo-caption">
+            <strong>Real local food.</strong>
+            <span>Personally ordered from Louisville-area food trucks.</span>
           </div>
         </div>
       </div>
@@ -114,6 +107,46 @@
             <h3>Build repeat business</h3>
             <p>Make it easier for loyal customers to follow your truck and come back again.</p>
           </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section gallery-section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Local flavor gallery</p>
+          <h2>Real food from Louisville-area food trucks.</h2>
+          <p>
+            These are meals we have personally ordered from food trucks in the Louisville and
+            Southern Indiana area — the kind of local flavor TruckBites is being built to help people discover.
+          </p>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card large">
+            <img src="images/loaded-fries.jpg" alt="Loaded fries from a Louisville-area food truck" />
+            <figcaption>Loaded fries from a Louisville-area food truck.</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="images/Philly-with-Fries.jpg" alt="Philly sandwich with fries from a local food truck" />
+            <figcaption>Philly sandwich and fries from a local truck.</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="images/Philly-eggrolls.jpg" alt="Philly cheesesteak egg rolls from a local food truck" />
+            <figcaption>Philly cheesesteak egg rolls from a local truck.</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="images/Club_Sandwich.jpg" alt="Club sandwich from a Louisville-area food truck" />
+            <figcaption>Club sandwich from a Louisville-area food truck.</figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img src="images/Club-sandwich.jpg" alt="Grilled club sandwich from a local food truck" />
+            <figcaption>Grilled club sandwich from a local truck.</figcaption>
+          </figure>
         </div>
       </div>
     </section>
@@ -191,6 +224,11 @@
           </div>
 
           <div>
+            <strong>Built from real food truck experiences</strong>
+            <span>We are learning from actual local meals, vendors, events, and customer behavior.</span>
+          </div>
+
+          <div>
             <strong>Vendor-first</strong>
             <span>Built around the visibility problems food truck owners face every week.</span>
           </div>
@@ -214,10 +252,17 @@
             lose when customers cannot find them at the right time.
           </p>
           <p>
-            Our goal is simple: make food truck discovery easier, help vendors grow, and support the
-            local food scene across Louisville and Southern Indiana.
+            This is being built from real local food truck experiences, not from a generic template.
+            We are eating locally, following trucks, watching the pain points, and building a tool that
+            helps both vendors and customers.
           </p>
         </div>
+
+        <img
+          src="images/Burger-and-fries.jpg"
+          alt="Food truck burger and fries representing local food discovery"
+          class="founder-photo"
+        />
       </div>
     </section>
 
@@ -385,4 +430,3 @@
   </footer>
 </body>
 </html>
-
