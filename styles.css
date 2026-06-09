@@ -768,6 +768,7 @@ a {
   .main-nav a {
     font-size: 0.88rem;
   }
+}
   .form-card label {
   display: block;
   margin-bottom: 1rem;
@@ -831,5 +832,6 @@ a {
   .form-card {
     padding: 1.5rem;
   }
+}
 }
 }
