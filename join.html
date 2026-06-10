@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Join TruckBites | Founding Vendor Enrollment</title>
+
+  <meta
+    name="description"
+    content="Join TruckBites as a Founding Vendor. Free until September 1. No payment required today."
+  />
+
+  <link rel="stylesheet" href="join.css" />
+</head>
+
+<body>
+  <header class="site-header">
+    <a href="index.html" class="brand">TRUCKBITES</a>
+
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="vendor-signup.html">Vendors</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="eyebrow">Founding Vendor Enrollment Open</p>
+
+      <h1>Join TruckBites Free Until September 1</h1>
+
+      <p class="hero-subtitle">
+        Get your food truck listed before public launch. No payment required today.
+      </p>
+
+      <div class="hero-badges">
+        <span>Free Through August 31</span>
+        <span>$49/Month Begins September 1</span>
+        <span>Enrollment Closes August 31</span>
+      </div>
+
+      <a href="#join-form" class="primary-cta">Reserve Your Free Spot</a>
+    </section>
+
+    <section class="benefits-section">
+      <div class="benefit-card">
+        <h2>Why Join TruckBites?</h2>
+        <ul>
+          <li>Get discovered by local customers</li>
+          <li>Share real-time truck locations</li>
+          <li>Promote menus, specials, and events</li>
+          <li>Reach customers actively looking for food trucks</li>
+          <li>Grow repeat business</li>
+        </ul>
+      </div>
+
+      <div class="benefit-card highlight">
+        <h2>Founding Vendor Benefits</h2>
+        <ul>
+          <li>Free access through August 31</li>
+          <li>No payment required today</li>
+          <li>Priority listing placement</li>
+          <li>Founding Vendor badge</li>
+          <li>Featured in launch marketing</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="offer-strip">
+      <h2>Simple Launch Offer</h2>
+      <p>
+        Sign up in July or August and use TruckBites free through August 31.
+        Vendor memberships begin September 1 at $49/month.
+      </p>
+    </section>
+
+    <section class="form-section" id="join-form">
+      <div class="form-intro">
+        <p class="eyebrow">Reserve Your Spot</p>
+        <h2>Become a Founding Vendor</h2>
+        <p>
+          Tell us about your food truck and we’ll follow up with onboarding details.
+        </p>
+      </div>
+
+      <form
+        class="join-form"
+        action="https://formspree.io/f/YOUR_FORM_ID"
+        method="POST"
+      >
+        <input type="hidden" name="_subject" value="New TruckBites Founding Vendor Signup" />
+        <input type="hidden" name="form_type" value="Founding Vendor Signup" />
+
+        <label>
+          Food Truck Name
+          <input type="text" name="food_truck_name" required />
+        </label>
+
+        <label>
+          Owner / Contact Name
+          <input type="text" name="contact_name" required />
+        </label>
+
+        <label>
+          Email
+          <input type="email" name="email" required />
+        </label>
+
+        <label>
+          Phone
+          <input type="tel" name="phone" />
+        </label>
+
+        <label>
+          Primary Service Area
+          <input
+            type="text"
+            name="service_area"
+            placeholder="Louisville, New Albany, Jeffersonville, Clarksville..."
+          />
+        </label>
+
+        <label>
+          Website or Social Media Link
+          <input
+            type="url"
+            name="website_or_social"
+            placeholder="https://facebook.com/yourtruck"
+          />
+        </label>
+
+        <label>
+          What type of food do you serve?
+          <input
+            type="text"
+            name="food_type"
+            placeholder="BBQ, tacos, burgers, coffee, desserts..."
+          />
+        </label>
+
+        <label>
+          Anything we should know?
+          <textarea
+            name="message"
+            rows="5"
+            placeholder="Tell us about your truck, schedule, events, or launch interest."
+          ></textarea>
+        </label>
+
+        <button type="submit">Reserve My Free Founding Vendor Spot</button>
+
+        <p class="form-note">
+          No payment required today. Founding Vendor enrollment closes August 31.
+        </p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© 2026 TruckBites LLC. Find Local Flavor.</p>
+  </footer>
+</body>
+</html>
